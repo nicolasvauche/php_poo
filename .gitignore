@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+.DS_Store
+config/db.php
+assets/img/message/*
+!assets/img/message/.gitignore
