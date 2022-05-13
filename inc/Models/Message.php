@@ -3,15 +3,12 @@ require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . '../Helpers/Db.php';
 
 class Message extends Db
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
+    protected $tableName = 'message';
 
     public function findAll()
     {
         try {
-            $sql = "SELECT * FROM message;";
+            $sql = "SELECT * FROM $this->tableName;";
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute();
 

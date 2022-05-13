@@ -14,6 +14,8 @@ $messages = $messageModel->findAll();
         <title>Liste des messages - PHP POO</title>
 
         <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <script src="assets/js/scripts.js" type="module" defer></script>
     </head>
     <body>
         <header class="app-header">
